@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "bx bx-package",
+        "count": "1,995",
+        "title": "Giver"
+    },
+    {
+        "icon": "bx bx-cart",
+        "count": "2,001",
+        "title": "Receiver"
+    },
+    {
+        "icon": "bx bx-bar-chart-alt",
+        "count": "2,632",
+        "title": "Button"
+    },
+    {
+        "icon": "bx bx-user",
+        "count": "11,711",
+        "title": "User"
+    }
+]
