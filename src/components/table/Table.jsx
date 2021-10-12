@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import './table.css'
+
 
 const Wrapper = styled.div`
      overflow-y: auto;
