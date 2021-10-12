@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import './layout.css'
 import Sidebar from '../sidebar/Sidebar'
 import TopNav from '../topnav/TopNav'
 import Routes from '../Routes'

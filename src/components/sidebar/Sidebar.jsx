@@ -15,7 +15,7 @@ const Container = styled.div`
     box-shadow: var(--box-shadow);
 `;
 
-const Sidebar__logo  = styled.div`
+const Logo  = styled.div`
     height: 150px;
     display: flex;
     align-items: center;
@@ -26,11 +26,11 @@ const Img = styled.img`
     height: 60px;
 `;
 
-const Sidebar_item = styled.div`
+const Item = styled.div`
     padding: 0 20px;
 `;
 
-const Sidebar_item_inner = styled.div`
+const Inner = styled.div`
     padding: 15px 25px;
     display: flex;
     align-items: center;
@@ -62,14 +62,14 @@ const SidebarItem = props => {
         //         </span>
         //     </div>
         // </div>
-        <Sidebar_item>
-            <Sidebar_item_inner >
+        <Item>
+            <Inner >
                 <I className={props.icon}></I>
                 <Span>
                     {props.title}
                 </Span>
-            </Sidebar_item_inner>
-        </Sidebar_item>
+            </Inner>
+        </Item>
     )
 }
 
@@ -94,9 +94,9 @@ const Sidebar = props => {
         //     }
         // </div>
         <Container>
-            <Sidebar__logo>
+            <Logo>
                 <Img src={logo} alt="company logo"/>
-            </Sidebar__logo>
+            </Logo>
             {
                 sidebar_items.map((item, index) => (
                     <Link to={item.route} key={index}>

@@ -16,7 +16,7 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
     })
 }
 
-const Dropdownn = styled.div`
+const Container = styled.div`
     position: relative;
     z-index: 99;
 `;
@@ -44,7 +44,7 @@ const Span = styled.span`
     color: var(--txt-white);
     font-size: 0.8rem;
 `;
-const Dropdown__content = styled.div`
+const Content = styled.div`
     position: absolute;
     top: calc(100% + 5px);
     right: 0;
@@ -58,7 +58,7 @@ const Dropdown__content = styled.div`
     transform: scale(0);
     transition: transform 0.3s ease 0s;
 `;
-const Dropdown__footer = styled.div`
+const Footer = styled.div`
     padding: 20px;
     text-align: center;
 `;
@@ -96,7 +96,7 @@ const Dropdown = props => {
         //         }
         //     </div>
         // </div>
-        <Dropdownn>
+        <Container>
             <Button ref={dropdown_toggle_el} className="dropdown__toggle">
                  {
                     props.icon ? <I className={props.icon}></I> : ''
@@ -108,19 +108,19 @@ const Dropdown = props => {
                     props.customToggle ? props.customToggle() : ''
                  }
              </Button>
-             <Dropdown__content ref={dropdown_content_el} className="dropdown__content">
+             <Content ref={dropdown_content_el} className="dropdown__content">
                  {
                      props.contentData && props.renderItems ? props.contentData.map((item, index) => props.renderItems(item, index)) : ''
                  }
                  {
                      props.renderFooter ? (
-                         <Dropdown__footer >
+                         <Footer >
                             {props.renderFooter()}
-                         </Dropdown__footer>
+                         </Footer>
                      ) : ''
                  }
-             </Dropdown__content>
-        </Dropdownn>
+             </Content>
+        </Container>
     )
 }
 
