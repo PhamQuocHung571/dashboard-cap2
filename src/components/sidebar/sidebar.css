@@ -44,7 +44,7 @@
     color: var(--main-color);
 } */
 
-.sidebar__item-inner.active {
+/* .sidebar__item-inner.active {
     border-radius: var(--border-radius);
     background-image: linear-gradient(
         to right,
@@ -52,4 +52,4 @@
         var(--second-color)
     );
     color: var(--txt-white);
-}
+} */

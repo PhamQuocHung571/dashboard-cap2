@@ -57,6 +57,10 @@ const Content = styled.div`
     transform-origin: top right;
     transform: scale(0);
     transition: transform 0.3s ease 0s;
+    .active{
+        transform: scale(1);
+        transition: transform 0.5s var(--transition-cubic);
+    }
 `;
 const Footer = styled.div`
     padding: 20px;

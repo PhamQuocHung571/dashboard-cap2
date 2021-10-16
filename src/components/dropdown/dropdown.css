@@ -51,7 +51,7 @@
     padding: 20px;
     text-align: center;
 } */
-.dropdown__content.active {
+/* .dropdown__content.active {
     transform: scale(1);
     transition: transform 0.5s var(--transition-cubic);
-}
+} */
